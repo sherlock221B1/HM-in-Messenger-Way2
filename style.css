@@ -1,0 +1,273 @@
+.head{
+    border-bottom: 1px solid lightgray;
+    background-color: white;
+    opacity: 0.9;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+}
+.menu{
+    width:1150px ;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logoContainer{
+    width:3%;
+}
+.logo{
+    width: 100%;
+}
+
+.topMenu{
+    text-decoration:none;
+    color: inherit;
+    margin-right: 25px;
+    font-size: 18px;
+    
+}
+.topMenu:hover{
+    padding-bottom: 3px;
+    border-bottom:3px solid blue;
+}
+.topMenuLogoContainer{
+    cursor: pointer;
+    display: none;
+}
+.topMenuLogo{
+    background-color: black;
+    width: 40px;
+    height: 4px;
+    border-radius: 55px;
+    transition: all 1s ease;
+}
+.hideTheDiv{
+    opacity: 0;
+}
+.rotateRight{
+    transform: rotate(45deg) translate(10.75px,10.75px) ;
+}
+.rotateLeft{
+    transform: rotate(-45deg) translate(10.75px,-10.75px);
+}
+
+.overlayTopMenuContainer{
+    display: none;
+}
+.mainContainer{
+    max-width: 1150px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    transition: all 1s ease;
+}
+.left{
+    display: inline-block;
+    width: 50%;
+}
+.header{
+    margin: 13px 0px;
+    border: 20%;
+    font-size: 60px;
+    color: #B93DE0;
+    
+}
+.message{
+    display: inline-block;
+    margin: 13px 0px;
+    font-size: 18px;
+}
+.leftMenu{
+    margin: 10px 0px;
+}
+.input{
+    border: none;
+    background-color: #F5F5F5;
+    display: block;
+    margin: 5px 0px;
+    border-radius: 7px;
+    outline-style: hidden;
+    outline-color:blue;
+    height: 22px;
+    width: 200px;
+}
+.loginBottom{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    padding: 2px 18px ;
+    height: 38px;
+   
+    font-size: 14px;
+    margin-right: 15px;
+}
+.appstoreIage{
+    width: 120px;
+    height: 40px;
+}
+.microsoftImage{
+    height: 40px;
+    margin-top: 30px;
+}
+.innerleft{
+    width: 80%;
+}
+.right{
+    display: flex;
+    width: 50%;
+    align-items: end;
+   
+}
+.familychat{
+    display: inline-block;
+    width: 55%;
+    
+}
+.messengerchat{
+    display: inline-block;
+   width: 45%;
+}
+.bottom{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-size: 13.5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.bottomLeft{
+    width: 45%;
+    display: inline-block;
+    text-align: center;
+}
+.bottomMessage1{
+    font-weight:900;
+}
+
+.bottomRight{
+    width: 51%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.bottomMenu{
+    color: inherit;
+    text-decoration: none;
+    width: 18%;
+}
+/* overlay menu က ဒီမှာ*/
+@media(max-width:767px){
+ 
+    .mainContainer{
+        margin: 0 auto;
+    }
+    .topMenuContainer{
+        display: none;
+    }
+    .topMenuLogoContainer{
+        height: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        right: 7px;
+        z-index: 2;
+    }
+    .left {
+        width: 100%;
+    
+    }
+    .innerleft{
+        margin:0 auto;
+    }
+    .right{
+        width: 100%;
+    }
+    .bottom{
+        margin: 25px 35px;
+    }
+    .bottomLeft{
+        width: 100%;
+        text-align: center;
+    }
+    .bottomRight{
+        width: 100%;
+        text-align: center;
+        margin-top: 25px;
+    }
+    .overlayTopMenuContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 0px;
+        width: 20vw;
+        z-index: -1;
+        position: fixed;
+        right: 7px;
+        opacity: 0;
+        transition: all 1s ease;
+    }
+    .overlayTopMenuContainerShower{
+        height: 40vh;
+        width: 30vw;
+        z-index: 1;
+        opacity: 1;
+        position: fixed;
+        right: 7px;
+    }
+    .overlayTopMenu{
+        width: 30vw;
+        height: 8vh;
+        background-color: rgb(227, 230, 233);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .overlayTopMenuChild{
+        width: fit-content;
+        color: inherit;
+        text-decoration: none;
+        font-size: 18px;
+        margin-left: 20px;
+    }
+    .overlayTopMenuChild:hover{
+        padding: 4px;
+        border-bottom: 3px solid blue;
+    }
+    /*
+    .container{
+        display: none;
+    }
+    */
+}
+@media(max-width:360px){
+    .logoContainer{
+        width: 8%;
+        
+    }
+    .innerleft{
+        width: 90%;
+    }
+    .bottom{
+        margin: 25px 15px;
+    }
+    .bottomRight{
+        margin-top: 20px;
+    }
+
+}
