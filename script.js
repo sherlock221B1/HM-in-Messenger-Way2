@@ -6,6 +6,11 @@ const line3Tag = document.querySelector(".line3");
 const containerTag = document.querySelector(".container");
 const overlayTopMenuContainerTag = document.querySelector(".overlayTopMenuContainer");
 
+/*const headTag = document.querySelector(".head");
+const mainContainerTag = document.querySelector(".mainContainer");
+mainContainerTag.style.marginTop = `${headTag.offsetHeight}px`;
+*/
+
 let overlayMenuOpen = false;
 topMenuLogoContainerTag.addEventListener("click", ()=>{
     if(overlayMenuOpen === true){
